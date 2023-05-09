@@ -23,3 +23,11 @@ for (let i = 0; i < colors.length; i++) {
     shirt.style = `fill : ${getComputedStyle(colors[i]).backgroundColor}`;
   });
 }
+
+const productOrder = () => {
+  const productContainerElm = document.querySelector('.product');
+  productContainerElm.textContent = 'Objednáno!';
+};
+
+const orderIt = document.querySelector('#product__order');
+orderIt.addEventListener('click', productOrder);
